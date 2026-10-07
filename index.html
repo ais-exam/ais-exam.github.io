@@ -92,6 +92,7 @@ h1{font:800 clamp(44px,7vw,64px)/1 var(--display);margin:4px 0 0;letter-spacing:
 .tview{overflow:hidden;margin:-6px;padding:6px;touch-action:pan-y}
 .tview .topics{display:flex;gap:24px;transition:transform .6s cubic-bezier(.65,0,.35,1)}
 .tview .topic{flex:0 0 100%;transition:opacity .6s}
+.tview .topic .body{flex:1}
 .tview .topic:not(.cur){opacity:.35}
 .rpane{animation:none}.rpane.in{animation:rin .55s cubic-bezier(.2,.7,.2,1)}
 @keyframes rin{from{opacity:0;transform:translateX(var(--dx,28px))}to{opacity:1;transform:none}}
@@ -142,7 +143,7 @@ tr.dim td{color:#a0a8af}
 .bar .ts,.key .ts{background:#7C3AED}.bar .pg,.key .pg{background:#cdb8f7}
 .chip.on.v{background:#efe7fd;color:#6a2bd1}
 .rrow .lg.ini{font:600 10px var(--mono);color:var(--muted)}
-.topic.nolink{cursor:default;border-color:#bdb9b0}.topic.nolink:hover{transform:none;box-shadow:none}
+.topic.nolink{cursor:default}.topic.nolink:hover{transform:none;box-shadow:none}
 .go.muted{color:var(--muted);text-decoration:none}
 .rpane[hidden]{display:none}.rpane{display:flex;flex-direction:column;gap:14px}
 .rlinks{display:flex;flex-wrap:wrap;gap:10px}
@@ -210,7 +211,7 @@ img{max-width:100%}
         <div class="body">
         <span class="lab">Vision</span>
         <h3>Same Space or Not (SSoN)</h3>
-        <p>Can vision-language models hold one scene in mind across views? Models see four views of a room, find the one that contradicts the other three, and explain why.</p>
+        <p>Can AI models keep one scene in mind? Models find the one view of a room that contradicts the other three.</p>
         <div class="chips"><span class="chip on v">New</span><span class="chip">1,000 questions</span><span class="chip">6 models and humans</span></div>
         <span class="go muted">Project page coming soon</span>
       </div>
